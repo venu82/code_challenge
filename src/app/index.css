@@ -1,3 +1,36 @@
+body .header-content .navbar-inverse {
+  margin-bottom: 0px;
+  background-color: #2D333F;
+}
+
+body .main-content {
+  padding-top: 30px;
+  background-color: #ECEDF2;
+}
+
+body .profile-information h3 {
+  color: white;
+}
+
+.header-content .navbar-inverse .navbar-nav .active a {
+  background-color: inherit;
+  border-bottom: 1px solid transparent;
+  border-color: darkorange;
+  padding: 0;
+  margin: 14px;
+}
+
+.header-content .navbar-inverse .navbar-right li img {
+  margin: 15px;
+}
+
+.main-content .container .well.login-alert {
+  padding: 15px;
+  background-color: #2D333F;
+  color: white;
+}
+
+
 @font-face {
   font-family: 'ipcentrum';
   src:    url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.eot?j3h80f');
@@ -226,4 +259,16 @@
 
 .thumbnail img.pull-right {
   width: 50px;
+}
+
+body {
+  color: #555;
+  /*font-family: 'ipcentrum';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;*/
+
 }
