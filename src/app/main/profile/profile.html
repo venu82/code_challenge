@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-3">
+      <img class="img-thumbnail" ngf-thumbnail="profile.data.photo|| '/assets/images/user-icon.png'" ngf-size="{width: 20, height: 20, quality: 0.9}">
+    </div>
+    <div class="col-md-5">
+      <h3>Your Profile Image</h3>
+      <button type="button"
+              ngf-select="profile.uploadPhoto($files)" ngf-pattern="'image/*'" ng-multiple="false"
+              ngf-accept="'image/*'" ngf-max-size="2MB"
+              class="btn btn-default" ngf-no-object-url="true">Change
+      </button>
+      <button type="button" ng-click="profile.removePhoto()" class="btn btn-default">Remove</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5>Profile Information</h5>
+          <hr>
+          <form name="profileForm" novalidate>
+            <div class="form-group"
+                 ng-class="{ 'has-error' : profileForm.forename.$invalid && !profileForm.forename.$pristine }">
+              <label for="forename">Firstname</label>
+              <input type="text" ng-model="profile.data.forename" class="form-control" name="forename" id="forename"
+                     required placeholder="Enter First name">
+
+              <div class="help-block" ng-messages="profileForm.forename.$error" ng-if="profileForm.forename.$touched">
+                <p ng-message="required">Your Firstname is required.</p>
+              </div>
+
+            </div>
+            <div class="form-group"
+                 ng-class="{ 'has-error' : profileForm.surname.$invalid && !profileForm.surname.$pristine }">
+              <label for="surname">Last name</label>
+              <input type="text" ng-model="profile.data.surname" class="form-control" name="surname" id="surname"
+                     required placeholder="Enter last name">
+
+              <div class="help-block" ng-messages="profileForm.surname.$error" ng-if="profileForm.surname.$touched">
+                <p ng-message="required">Your Lastname is required.</p>
+              </div>
+
+            </div>
+            <div class="form-group"
+                 ng-class="{ 'has-error' : profileForm.title.$invalid && !profileForm.title.$pristine }">
+              <label for="title">Position</label>
+              <input type="text" ng-model="profile.data.title" class="form-control" name="title" id="title" required
+                     placeholder="Enter Position">
+              <div class="help-block" ng-messages="profileForm.title.$error" ng-if="profileForm.title.$touched">
+                <p ng-message="required">Your position is required.</p>
+              </div>
+            </div>
+            <hr>
+            <button ng-click="profile.submit($event)" ng-disabled="profileForm.$invalid || profileForm.$pending"
+                    type="submit" class="btn btn-default btn-lg pull-right">Save
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="container">
+  <form name="emailAddForm">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Emails</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="emailAdresses in email.emails">
+        <td>{{emailAdresses.email}}</td>
+        <td>
+          <button ng-click="email.removeEmail($index)"
+                  type="button" class="btn btn-default btn-lg pull-right">Remove
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group"
+               ng-class="{ 'has-error': emailAddForm.email.$invalid && !emailAddForm.email.$pristine }">
+            <input type="email" class="form-control" name="email" ng-model="email.add.email" required/>
+            <p class="help-block" ng-if="emailAddForm.email.$error.required && !emailAddForm.email.$pristine ">The email
+              is required</p>
+            <p class="help-block" ng-if="emailAddForm.email.$error.email  && !emailAddForm.email.$pristine ">The email
+              address is invalid</p>
+          </div>
+        </td>
+        <td>
+          <button ng-click="email.addEmail($event)" ng-disabled="emailAddForm.$invalid || emailAddForm.$pending"
+                  type="submit" class="btn btn-default btn-lg pull-right">Add
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

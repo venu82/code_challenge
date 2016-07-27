@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'ipcentrum';
+  src:    url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.eot?j3h80f');
+  src:    url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.eot?j3h80f#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.woff2?j3h80f') format('woff2'),
+  url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.ttf?j3h80f') format('truetype'),
+  url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.woff?j3h80f') format('woff'),
+  url('https://s3.amazonaws.com/icomoon.io/68294/IPCentrum-Website/ipcentrum.svg?j3h80f#ipcentrum') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ipcentrum' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-renewals-icon:before {
+  content: "\e900";
+}
+.icon-deBanke-mono:before {
+  content: "\e649";
+}
+.icon-investors-in-people:before {
+  content: "\e637";
+}
+.icon-bsi-9001:before {
+  content: "\e638";
+}
+.icon-TessChoob:before {
+  content: "\e635";
+}
+.icon-AL:before {
+  content: "\e607";
+}
+.icon-AT:before {
+  content: "\e608";
+}
+.icon-BA:before {
+  content: "\e609";
+}
+.icon-BE:before {
+  content: "\e60a";
+}
+.icon-BG:before {
+  content: "\e60b";
+}
+.icon-CH:before {
+  content: "\e60d";
+}
+.icon-CY:before {
+  content: "\e60e";
+}
+.icon-CZ:before {
+  content: "\e60f";
+}
+.icon-DE:before {
+  content: "\e610";
+}
+.icon-DK:before {
+  content: "\e611";
+}
+.icon-EE:before {
+  content: "\e612";
+}
+.icon-ES:before {
+  content: "\e613";
+}
+.icon-FI:before {
+  content: "\e614";
+}
+.icon-FR:before {
+  content: "\e615";
+}
+.icon-GB:before {
+  content: "\e616";
+}
+.icon-GR:before {
+  content: "\e617";
+}
+.icon-HR:before {
+  content: "\e618";
+}
+.icon-HU:before {
+  content: "\e619";
+}
+.icon-IE:before {
+  content: "\e61a";
+}
+.icon-IS:before {
+  content: "\e61b";
+}
+.icon-IT:before {
+  content: "\e61c";
+}
+.icon-LT:before {
+  content: "\e61d";
+}
+.icon-LU:before {
+  content: "\e61f";
+}
+.icon-LV:before {
+  content: "\e624";
+}
+.icon-MC:before {
+  content: "\e625";
+}
+.icon-ME:before {
+  content: "\e626";
+}
+.icon-MK:before {
+  content: "\e627";
+}
+.icon-MT:before {
+  content: "\e628";
+}
+.icon-NL:before {
+  content: "\e629";
+}
+.icon-NO:before {
+  content: "\e62a";
+}
+.icon-PL:before {
+  content: "\e62b";
+}
+.icon-PT:before {
+  content: "\e62c";
+}
+.icon-RO:before {
+  content: "\e62d";
+}
+.icon-RS:before {
+  content: "\e62e";
+}
+.icon-SE:before {
+  content: "\e62f";
+}
+.icon-SI:before {
+  content: "\e630";
+}
+.icon-SK:before {
+  content: "\e631";
+}
+.icon-SM:before {
+  content: "\e632";
+}
+.icon-TR:before {
+  content: "\e633";
+}
+.icon-europe-map:before {
+  content: "\e606";
+}
+.icon-chevron-right:before {
+  content: "\e63a";
+}
+.icon-chevron-small-left:before {
+  content: "\e634";
+}
+.icon-chevron-small-right:before {
+  content: "\e60c";
+}
+.icon-chevron-thin-down:before {
+  content: "\e639";
+}
+.icon-calculator:before {
+  content: "\e636";
+}
+.icon-search:before {
+  content: "\e61e";
+}
+.icon-service-other:before {
+  content: "\e620";
+}
+.icon-service-renewal:before {
+  content: "\e621";
+}
+.icon-service-translation:before {
+  content: "\e622";
+}
+.icon-service-validation:before {
+  content: "\e623";
+}
+.icon-ip-centrum-1:before {
+  content: "\e600";
+}
+.icon-ip-centrum-2:before {
+  content: "\e601";
+}
+.icon-close:before {
+  content: "\e901";
+}
+.icon-unlocked:before {
+  content: "\e604";
+}
+.icon-lock:before {
+  content: "\e605";
+}
+.icon-email:before {
+  content: "\e603";
+}
+.icon-phone:before {
+  content: "\e602";
+}
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+}
+
+.thumbnail img.pull-right {
+  width: 50px;
+}
